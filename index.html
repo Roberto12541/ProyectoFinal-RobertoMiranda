@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -34,8 +35,12 @@
 
     <main>
         
+        <section class="carrusel">
+
+        </section>
+
         <section class="galeria">
-            <div class="aof">
+            <div class="aof" data-aos="fade-up" data-aos-duration="3000">
                 <div class="imagen">
                     <img src="img/target-one.jpg" alt="" class="img-fluid">
                 </div>
@@ -45,7 +50,7 @@
                     <span class="descripcion">Ahora disponible para consolas y en la nube. Juega con Xbox Game Pass Ultimate.</span>
                 </div>
             </div>
-            <div class="gow">
+            <div class="gow" data-aos="fade-up" data-aos-duration="3000">
                 <div class="imagen">
                     <img src="img/target-two.jpg" alt="" class="img-fluid">
                 </div>
@@ -55,7 +60,7 @@
                     <span class="descripcion">Desde Santa Monica Studio llega la secuela del aclamado por la crítica, God of War (2018). Embárcate en un viaje épico y sincero, a medida que Kratos y Atreus luchan por no rendirse y liberarse en God of War Ragnarök.</span>
                 </div>
             </div>
-            <div class="mandos">
+            <div class="mandos" data-aos="fade-down" data-aos-duration="3000">
                 <div class="imagen">
                     <img src="img/target-three.jpg" alt="" class="img-fluid">
                 </div>
@@ -65,7 +70,7 @@
                     <span class="descripcion">Accesorios de la major calidad para las mas grandes experiencias.</span>
                 </div>
             </div>
-            <div class="mcr">
+            <div class="mcr" data-aos="fade-up" data-aos-duration="3000">
                 <div class="imagen">
                     <img src="img/target-four.jpg" alt="" class="img-fluid">
                 </div>
@@ -75,7 +80,7 @@
                     <span class="descripcion">¡Pon la mira en la aventura, deambula sin rumbo o persigue algo nuevo en la Actualización Salvaje! Las posibilidades son ilimitadas y las tienes todas.</span>
                 </div>
             </div>
-            <div class="fall">
+            <div class="fall" data-aos="fade-right" data-aos-duration="6000">
                 <div class="imagen">
                     <img src="img/target-five.jpg" alt="" class="img-fluid">
                 </div>
@@ -87,7 +92,7 @@
             </div>
         </section>
 
-        <section class="nosotros">
+        <section class="nosotros" data-aos="fade-up" data-aos-duration="1000">
             <div class="contenedor">
                 <div class="nosotros__texto">
                     <h3>GamerStore</h3>
@@ -141,7 +146,11 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

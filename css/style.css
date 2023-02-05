@@ -250,6 +250,10 @@ footer .contenedor {
   background-color: white;
 }
 
+.carrusel {
+  height: 100vh;
+}
+
 .galeria {
   padding: 5px;
   display: grid;
@@ -398,6 +402,9 @@ footer .contenedor {
   background-color: #1c3049;
   color: white;
 }
+.nosotros .contenedor .nosotros__texto h3 {
+  font-weight: 700;
+}
 
 @media (min-width: 576px) {
   .nosotros .contenedor {
@@ -420,6 +427,7 @@ footer .contenedor {
 }
 @media (min-width: 1200px) {
   .galeria {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     justify-items: flex-start;
     align-items: flex-start;
     grid-template-columns: repeat(3, 1fr);

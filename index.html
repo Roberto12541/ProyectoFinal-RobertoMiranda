@@ -5,20 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <meta name="description" content="Adquiere los mejores equipos moviles de todas las marcas en TecnoStore al mejor precio.">
-    <title>TecnoStore | Los mejores equipos al mejor precio.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>GamerStore | Los mejores videojuegos, consolas y accesorios.</title>
 </head>
 
 <body>
 
     <header>
-        <div class="container__header">
-            <a href="./index.html" class="c-azul">TecnoStore</a>
-            <div class="menu bg-blanco">
+        <div class="contenedor">
+            <a href="./index.html" id="logo">GamerStore</a>
+            <div class="menu">
                 <nav>
                     <ul>
                         <li><a href="./index.html" class="item-nav-activo">Inicio</a></li>
@@ -29,93 +28,119 @@
                     </ul>
                 </nav>
             </div>
-            <i class="fa-solid fa-bars" id="icon_menu"></i>
+            <i class="bi bi-list-nested" id="icon_menu"></i>
         </div>
     </header>
 
     <main>
-        <!-- banner de inicio -->
-        <section class="banner d-flex t-center dflex-column align-items-center justify-content-center">
-            <h1 class="c-blanco">TecnoStore</h1>
-            <button class="btn btn-azul">COMPRA YA</button>
-        </section>
-        <!-- Quienes somos -->
-        <section class="nosotros d-flex align-items-center dflex-column dflex-row-m">
-            <div class="nosotros__texto">
-                <h2 class="nosotros__title t-center">Quienes <span class="azul">Somos</span></h2>
-                <p class="nosotros__cuerpo t-justify t-left">Desde hace 20 años nos dedicamos a conectar a los mexicanos a través de la distribución de telefonía móvil, ofreciendo una amplia gama de teléfonos celulares y aparatos tecnológicos para todas las necesidades y gustos del mercado.
-                    Como líder de ventas online de equipos celulares en México estamos comprometidos con la creación de experiencias satisfactorias de compra, ofreciendo un servicio personalizado a todos nuestros clientes desde que entran a nuestras distintas plataformas hasta que reciben su pedido.</p>
+        
+        <section class="galeria">
+            <div class="aof">
+                <div class="imagen">
+                    <img src="img/target-one.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="contenido">
+                    <span class="plataformas">XBOX - PLAYSTATION - PC</span>
+                    <span class="nombre">Age of Empires II: Definitive Edition</span>
+                    <span class="descripcion">Ahora disponible para consolas y en la nube. Juega con Xbox Game Pass Ultimate.</span>
+                </div>
             </div>
-            <div class="nosotros__imagen">
-                <img src="img/sobre.png" alt="equipo-de-trabajo">
+            <div class="gow">
+                <div class="imagen">
+                    <img src="img/target-two.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="contenido">
+                    <span class="plataformas">PLAYSTATION - PC</span>
+                    <span class="nombre">God Of War Ragnarök</span>
+                    <span class="descripcion">Desde Santa Monica Studio llega la secuela del aclamado por la crítica, God of War (2018). Embárcate en un viaje épico y sincero, a medida que Kratos y Atreus luchan por no rendirse y liberarse en God of War Ragnarök.</span>
+                </div>
             </div>
-        </section>
-        <!-- Promociones -->
-        <section class="promociones bg-negro">
-            <h2 class="promociones__title t-center c-blanco">Promociones</h2>
-            <div class="promociones__productos">
-                <div class="tarjeta bg-blanco">
-                    <img src="img/galaxy-a04e.webp" alt="galaxy-a04e-3gb-blanco">
-                    <div class="tarjeta__cuerpo">
-                        <h4>$2,419.00</h4>
-                    </div>
+            <div class="mandos">
+                <div class="imagen">
+                    <img src="img/target-three.jpg" alt="" class="img-fluid">
                 </div>
-                <div class="tarjeta bg-blanco">
-                    <img src="img/redmi-note-11s.webp" alt="redmi-note-11s-6gb-negro">
-                    <div class="tarjeta__cuerpo">
-                        <h4>$4,379.00</h4>
-                    </div>
+                <div class="contenido">
+                    <span class="plataformas">PLAYSTATION - XBOX</span>
+                    <span class="nombre">Los mejores accesorios.</span>
+                    <span class="descripcion">Accesorios de la major calidad para las mas grandes experiencias.</span>
                 </div>
-                <div class="tarjeta bg-blanco">
-                    <img src="img/galaxy-a13.webp" alt="samsung-galaxy-a13-blanco-4gb">
-                    <div class="tarjeta__cuerpo">
-                        <h4>$3,290.00</h4>
-                    </div>
+            </div>
+            <div class="mcr">
+                <div class="imagen">
+                    <img src="img/target-four.jpg" alt="" class="img-fluid">
                 </div>
-                <div class="tarjeta bg-blanco">
-                    <img src="img/honor-x8.webp" alt="honor-x8-negro-6gb">
-                    <div class="tarjeta__cuerpo">
-                        <h4>$4,480.00</h4>
-                    </div>
+                <div class="contenido">
+                    <span class="plataformas">PC - PLAYSTATION - XBOX</span>
+                    <span class="nombre">Minecraft</span>
+                    <span class="descripcion">¡Pon la mira en la aventura, deambula sin rumbo o persigue algo nuevo en la Actualización Salvaje! Las posibilidades son ilimitadas y las tienes todas.</span>
                 </div>
-                <div class="tarjeta bg-blanco">
-                    <img src="img/combo-infinitix.webp" alt="combo-infinitix-2-piezas-verde-6gb">
-                    <div class="tarjeta__cuerpo">
-                        <h4>$6,420.00</h4>
-                    </div>
+            </div>
+            <div class="fall">
+                <div class="imagen">
+                    <img src="img/target-five.jpg" alt="" class="img-fluid">
                 </div>
-                <div class="tarjeta bg-blanco">
-                    <img src="img/xbox-1t.webp" alt="xbox-series-x-negro-1tera">
-                    <div class="tarjeta__cuerpo">
-                        <h4>$12,450.00</h4>
-                    </div>
+                <div class="contenido">
+                    <span class="plataformas">PC - PLAYSTATION - XBOX</span>
+                    <span class="nombre">Fall  Guys</span>
+                    <span class="descripcion">Fall Guys admite juegos cruzados, fiestas multiplataforma y progresión cruzada a través de tu cuenta de Epic Games.</span>
                 </div>
             </div>
         </section>
+
+        <section class="nosotros">
+            <div class="contenedor">
+                <div class="nosotros__texto">
+                    <h3>GamerStore</h3>
+                    <p>En consolas y videojuegos sé parte de la evolución tecnológica y disfruta en tu hogar una experiencia completa de alta fidelidad en imagen y sonido, diseñados para cada consola. Descubre nuestras increíbles consolas y videojuegosque harán más tú experiencia.</p>
+                </div>
+                <div class="nosotros__imagen">
+                    <img src="./img/nosotros.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
     </main>
+
     <footer>
-        <div class="contenedor__footer">
-            <div class="secciones">
-                <div class="redes">
-                    <h3>Redes</h3>
-                    <ul>
-                        <li><a href=""><i class="bi bi-facebook"></i> Facebook</a></li>
-                        <li><a href=""><i class="bi bi-whatsapp"></i> Whatsapp</a></li>
-                        <li><a href=""><i class="bi bi-envelope-at-fill"></i> Facebook</a></li>
-                    </ul>
+
+        <div class="contenedor">
+            <div class="box__footer">
+                <div class="logo">
+                    <a href="">GamerStore</a>
                 </div>
-                <div class="paginas">
-                    <h3>Visitar:</h3>
-                    <ul>
-                        <li><a href="pages/productos.html">Productos</a></li>
-                        <li><a href="pages/reseñas.html">Reseñas</a></li>
-                        <li><a href="pages/contacto.html">Contacto</a></li>
-                    </ul>
+                <div class="terms">
+                    <p>Los mejores videojuegos, accesorios y las consolas de ultima generacion, disponbles en GamerStore.</p>
                 </div>
             </div>
-            <a href="index.html" id="logoFooter" class="c-azul">TecnoStore</a>
+            <div class="box__footer">
+                <h4>Pruebas</h4>
+                <a href="pages/unidadI.html#prueba">Prueba I</a>
+                <a href="pages/unidadII.html#prueba">Prueba II</a>
+                <a href="pages/unidadIII.html#prueba">Prueba III</a>
+            </div>
+
+            <div class="box__footer">
+                <h4>Unidades</h4>
+                <a href="pages/unidadI.html">Unidad I</a>
+                <a href="pages/unidadII.html">Unidad II</a>
+                <a href="pages/unidadIII.html">Unidad III</a>
+            </div>
+
+            <div class="box__footer">
+                <h4>Redes Sociales</h4>
+                <a href="https://www.facebook.com/profile.php?id=100010329643690" target="_blank"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="https://api.whatsapp.com/send/?phone=525564100068&text&app_absent=0"><i class="fab fa-twitter-square"></i> WhatsApp</a>
+                <a href="https://www.instagram.com/robertomiranda87/"><i class="fab fa-instagram-square"></i> Instagram</a>
+            </div>
+
+        </div>
+
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2023 <b>Roberto Miranda</b></p>
         </div>
     </footer>
+
     <script src="./js/script.js"></script>
 </body>
 

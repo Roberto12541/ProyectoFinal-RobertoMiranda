@@ -1,73 +1,67 @@
 header{
     height: 60px;
-    & .container__header{
-        max-width: 1200px;
-        height: 100%;
-        margin: auto;
+    .contenedor{
         padding: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        & a{
-            font-weight: 700;
-            font-size: 20px;
+        @include flex(space-between, center, row, "");
+        #logo{
+            @include font($colorPrimario, 18px, 500m, left);
         }
-        & .menu{
+        #icon_menu {
+            display: block;
+            cursor: pointer;
+            font-size: 24px;
+            color: $colorPrimario;
+        }
+        .menu{
             height: 0px;
             position: absolute;
-            right: 5px;
-            top: 65px;
+            right: 10px;
+            top: 60px;
             overflow: hidden;
             z-index: 10;
-            box-shadow: 0px 0px 30px -20px rgb(0 0 0 / 50%);
+            box-shadow: 0px 0px 30px -20px rgba(0, 0, 0, 0.5);
             transition: all 300ms;
-            & nav ul{
-                display: flex;
+            background-color: $fondo;
+            nav ul{
+                @include flex("", "", column, 15px);
                 padding: 20px 0px;
-                flex-direction: column;
-                & li{
-                    list-style: none;
-                    padding: 10px 40px;
-                    & .item-nav{
+                li{
+                    padding: 0px 40px;
+                    .item-nav{
                         font-size: 16px;
-                        text-decoration: none;
                         transition: opacity 300ms;
                         color: gray;
                         &-activo{
-                            color: black;
                             @extend .item-nav;
+                            color: $colorPrimario;
                         }
                     }
                 }
             }
         }
-        & .mostrar_menu {
-            height: 235px;
-        }
-        & #icon_menu {
-            display: block;
-            cursor: pointer;
-            font-size: 24px;
+        .menu-extend{
+            height: 230px;
         }
     }
-}
-@include mediano(){
-    header .container__header{ 
-        padding: 0px 50px;
-        & #icon_menu{
+} 
+
+@include query(md){
+    header .contenedor {
+        #icon_menu {
             display: none;
         }
-        & .menu{
+        .menu {
+            display: block;
             position: relative;
             overflow: visible;
-            top: 0;
+            top: 10px;
             right: 0;
             height: auto;
-            & nav ul{
+            nav ul{
                 flex-direction: row;
                 padding: 0;
                 gap: 20px;
-                & li{
+                li{
                     padding: 0;
                 }
             }

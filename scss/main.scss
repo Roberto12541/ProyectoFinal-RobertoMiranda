@@ -1,6 +1,8 @@
-@import "./base/_base";
 @import "./utils/_utils";
+@import "./utils/_mixin";
+@import "./base/base";
 @import "./components/nav";
+@import "./components/carta";
 @import "./components/botones";
 @import "./components/footer";
 @import "./pages/index.scss";

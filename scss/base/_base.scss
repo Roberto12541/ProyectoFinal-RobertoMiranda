@@ -1,8 +1,23 @@
+@font-face {
+    font-family: MuseoSansRounded;
+    src: url("./font/MuseoSansRounded100.otf"), url("./font/MuseoSansRounded300.otf"), url("./font/MuseoSansRounded500.otf"), url("./font/MuseoSansRounded700.otf"), url("./font/MuseoSansRounded900.otf"), url("./font/MuseoSansRounded1000.otf");
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: MuseoSansRounded, sans-serif;
     list-style: none;
+}
+a{
     text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 1000;
+}
+p{
+    font-size: 18px;
+}
+body{
+    background-color: $fondo;
 }

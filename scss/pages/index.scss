@@ -1,0 +1,110 @@
+.banner{
+    gap: 15px;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        ),
+        url("../img/bannerP.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    & h1{
+        font-size: 28px;
+    }
+}
+.nosotros{
+    gap: 20px;
+    padding: 20px;
+    margin: 20px 0px;
+    &__title{
+        margin-bottom: 15px;
+    }
+    &__imagen img{
+        width: 100%;
+    }
+}
+
+.promociones{
+    padding: 20px;
+    &__title{
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+    & .promociones__productos{
+        @include grid(1fr 1fr, 5px, center, center);
+        & .tarjeta{
+            max-width: 200px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        & img{
+            width: 100%;
+        }
+        & .tarjeta__cuerpo{
+            padding: 10px 15px;
+        }
+    }
+}
+footer{
+    padding: 5px;
+}
+
+@include chico(){
+    .nosotros{
+        padding: 50px;
+        & .nosotros__texto{
+            max-width: 500px;
+        }
+        &__imagen{
+            width: 60%;
+        }
+        &__cuerpo{
+            padding: 10px;
+        }
+    }
+    .promociones .promociones__productos{
+            grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@include mediano(){
+    .nosotros{
+        .nosotros__title, .nosotros__cuerpo{
+            padding: 5px 0px;
+        }
+        & .nosotros__imagen{
+            width: 100%;
+        }
+    }
+    .promociones .promociones__productos{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@include grande(){
+    .nosotros{
+        max-width: 980px;
+        margin: 40px auto;
+        & .nosotros__imagen{
+            width: 80%;
+        }
+    }
+    .promociones {
+        .promociones__productos{
+            max-width: 1120px;
+            margin: 0 auto;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+    }
+}
+@include gigante(){
+    .nosotros{
+        & .nosotros__imagen{
+            width: 80%;
+        }
+    }
+    .promociones .promociones__productos{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}

@@ -1,0 +1,31 @@
+.sobre-nosotros{
+    margin: 40px 20px;
+    gap: 20px;
+    &__info{
+        & h2{
+            margin-bottom: 15px;
+        }
+    }    
+    &__img img{
+        width: 100%;
+    }
+}
+@include mediano(){
+    .sobre-nosotros{
+        margin: 80px 60px;
+        &__info{
+            h2{
+                text-align: left;
+            }
+        }
+    }
+}
+@include grande(){
+    .sobre-nosotros{
+        max-width: 800px;
+        margin: 50px auto;
+        &__info{
+            width: 100%;
+        }
+    }
+}

@@ -1,13 +1,13 @@
+
 .contacto{
     background-image: url(../img/contacto-background.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     .contenedor{
-        @include flex(space-evenly, center, row, "");
+        @include flex(space-evenly, center, column, 20px);
         padding: 10px;
         .info__contacto{
-            width: 40%;
             color: white;
             .texto{
                 @include flex("", "", column, 10px);
@@ -23,31 +23,26 @@
             }
             .redes{
                 @include flex(space-evenly, center, row, "");
-                padding: 10px;
+                padding: 20px 0px;
                 font-size: 28px;
-                a{
-                    color: white;
-                }
             }
         }
         .ubicacion{
-            width: 450px;
-            height: 450px;
+            width: 250px;
+            height: 250px;
             border-radius: 5px;
             overflow: hidden;
             box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+            @include query(md){
+                width: 550px;
+                @include query(lg){
+                    width: 450px;
+                    height: 450px;
+                }
+            }
         }
-    }
-}
-
-.forms{
-    @include flex("", flex-start, column, 5px);
-    input, textarea{
-        outline: none;
-        padding: 5px 10px;
-        border-radius: 5px;
-        border: 1px solid $colorSecundario;
-        width: 100%;
-        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+        @include query(lg){
+            flex-direction: row;
+        }
     }
 }

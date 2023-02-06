@@ -19,6 +19,7 @@ background: #555;
     font-family: MuseoSansRounded;
     src: url("./font/MuseoSansRounded100.otf"), url("./font/MuseoSansRounded300.otf"), url("./font/MuseoSansRounded500.otf"), url("./font/MuseoSansRounded700.otf"), url("./font/MuseoSansRounded900.otf"), url("./font/MuseoSansRounded1000.otf");
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -26,14 +27,17 @@ background: #555;
     font-family: MuseoSansRounded, sans-serif;
     list-style: none;
 }
+
 textarea{
     resize: none;
 }
+
 a{
     text-decoration: none;
     color: white;
     transition: ease-in-out 400ms;
 }
+
 h1,h2,h3,h4,h5,h6{
     font-weight: 1000;
 }

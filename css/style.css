@@ -229,30 +229,20 @@ header .contenedor .menu-extend, header .accesorios .contenedor--playstation .me
   font-size: 15px;
 }
 
-.carta {
-  max-width: 125px;
-  height: auto;
-  background-color: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: 0.3 all ease;
+.forms {
+  display: flex;
+  justify-content: "";
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
 }
-.carta h3, .carta h2, .carta button {
-  display: none;
-}
-@media (min-width: 576px) {
-  .carta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 280px;
-    height: 360px;
-  }
-  .carta h3, .carta h2, .carta button {
-    display: block;
-  }
+.forms input, .forms textarea {
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #388bfd;
+  width: 100%;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 button {
@@ -871,12 +861,11 @@ footer .contenedor, footer .accesorios .contenedor--playstation, footer .accesor
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-direction: row;
-  gap: "";
+  flex-direction: column;
+  gap: 20px;
   padding: 10px;
 }
 .contacto .contenedor .info__contacto, .contacto .cover-consola .contenedor--playstation .info__contacto, .cover-consola .contacto .contenedor--playstation .info__contacto, .contacto .cover-consola--xbox .contenedor--playstation .info__contacto, .cover-consola--xbox .contacto .contenedor--playstation .info__contacto, .contacto .cover-consola--playstation .contenedor--playstation .info__contacto, .cover-consola--playstation .contacto .contenedor--playstation .info__contacto, .contacto .cover-consola--switch .contenedor--playstation .info__contacto, .cover-consola--switch .contacto .contenedor--playstation .info__contacto, .contacto .cover-consola .contenedor--xbox .info__contacto, .cover-consola .contacto .contenedor--xbox .info__contacto, .contacto .cover-consola--xbox .contenedor--xbox .info__contacto, .cover-consola--xbox .contacto .contenedor--xbox .info__contacto, .contacto .cover-consola--playstation .contenedor--xbox .info__contacto, .cover-consola--playstation .contacto .contenedor--xbox .info__contacto, .contacto .cover-consola--switch .contenedor--xbox .info__contacto, .cover-consola--switch .contacto .contenedor--xbox .info__contacto, .contacto .cover-consola .contenedor--switch .info__contacto, .cover-consola .contacto .contenedor--switch .info__contacto, .contacto .cover-consola--xbox .contenedor--switch .info__contacto, .cover-consola--xbox .contacto .contenedor--switch .info__contacto, .contacto .cover-consola--playstation .contenedor--switch .info__contacto, .cover-consola--playstation .contacto .contenedor--switch .info__contacto, .contacto .cover-consola--switch .contenedor--switch .info__contacto, .cover-consola--switch .contacto .contenedor--switch .info__contacto, .contacto .accesorios .contenedor--playstation .info__contacto, .accesorios .contacto .contenedor--playstation .info__contacto, .contacto .accesorios--xbox .contenedor--playstation .info__contacto, .accesorios--xbox .contacto .contenedor--playstation .info__contacto, .contacto .accesorios--switch .contenedor--playstation .info__contacto, .accesorios--switch .contacto .contenedor--playstation .info__contacto, .contacto .accesorios--playstation .contenedor--playstation .info__contacto, .accesorios--playstation .contacto .contenedor--playstation .info__contacto {
-  width: 40%;
   color: white;
 }
 .contacto .contenedor .info__contacto .texto, .contacto .cover-consola .contenedor--playstation .info__contacto .texto, .cover-consola .contacto .contenedor--playstation .info__contacto .texto, .contacto .cover-consola--xbox .contenedor--playstation .info__contacto .texto, .cover-consola--xbox .contacto .contenedor--playstation .info__contacto .texto, .contacto .cover-consola--playstation .contenedor--playstation .info__contacto .texto, .cover-consola--playstation .contacto .contenedor--playstation .info__contacto .texto, .contacto .cover-consola--switch .contenedor--playstation .info__contacto .texto, .cover-consola--switch .contacto .contenedor--playstation .info__contacto .texto, .contacto .cover-consola .contenedor--xbox .info__contacto .texto, .cover-consola .contacto .contenedor--xbox .info__contacto .texto, .contacto .cover-consola--xbox .contenedor--xbox .info__contacto .texto, .cover-consola--xbox .contacto .contenedor--xbox .info__contacto .texto, .contacto .cover-consola--playstation .contenedor--xbox .info__contacto .texto, .cover-consola--playstation .contacto .contenedor--xbox .info__contacto .texto, .contacto .cover-consola--switch .contenedor--xbox .info__contacto .texto, .cover-consola--switch .contacto .contenedor--xbox .info__contacto .texto, .contacto .cover-consola .contenedor--switch .info__contacto .texto, .cover-consola .contacto .contenedor--switch .info__contacto .texto, .contacto .cover-consola--xbox .contenedor--switch .info__contacto .texto, .cover-consola--xbox .contacto .contenedor--switch .info__contacto .texto, .contacto .cover-consola--playstation .contenedor--switch .info__contacto .texto, .cover-consola--playstation .contacto .contenedor--switch .info__contacto .texto, .contacto .cover-consola--switch .contenedor--switch .info__contacto .texto, .cover-consola--switch .contacto .contenedor--switch .info__contacto .texto, .contacto .accesorios .contenedor--playstation .info__contacto .texto, .accesorios .contacto .contenedor--playstation .info__contacto .texto, .contacto .accesorios--xbox .contenedor--playstation .info__contacto .texto, .accesorios--xbox .contacto .contenedor--playstation .info__contacto .texto, .contacto .accesorios--switch .contenedor--playstation .info__contacto .texto, .accesorios--switch .contacto .contenedor--playstation .info__contacto .texto, .contacto .accesorios--playstation .contenedor--playstation .info__contacto .texto, .accesorios--playstation .contacto .contenedor--playstation .info__contacto .texto {
@@ -903,34 +892,31 @@ footer .contenedor, footer .accesorios .contenedor--playstation, footer .accesor
   align-items: center;
   flex-direction: row;
   gap: "";
-  padding: 10px;
+  padding: 20px 0px;
   font-size: 28px;
 }
-.contacto .contenedor .info__contacto .redes a, .contacto .cover-consola .contenedor--playstation .info__contacto .redes a, .cover-consola .contacto .contenedor--playstation .info__contacto .redes a, .contacto .cover-consola--xbox .contenedor--playstation .info__contacto .redes a, .cover-consola--xbox .contacto .contenedor--playstation .info__contacto .redes a, .contacto .cover-consola--playstation .contenedor--playstation .info__contacto .redes a, .cover-consola--playstation .contacto .contenedor--playstation .info__contacto .redes a, .contacto .cover-consola--switch .contenedor--playstation .info__contacto .redes a, .cover-consola--switch .contacto .contenedor--playstation .info__contacto .redes a, .contacto .cover-consola .contenedor--xbox .info__contacto .redes a, .cover-consola .contacto .contenedor--xbox .info__contacto .redes a, .contacto .cover-consola--xbox .contenedor--xbox .info__contacto .redes a, .cover-consola--xbox .contacto .contenedor--xbox .info__contacto .redes a, .contacto .cover-consola--playstation .contenedor--xbox .info__contacto .redes a, .cover-consola--playstation .contacto .contenedor--xbox .info__contacto .redes a, .contacto .cover-consola--switch .contenedor--xbox .info__contacto .redes a, .cover-consola--switch .contacto .contenedor--xbox .info__contacto .redes a, .contacto .cover-consola .contenedor--switch .info__contacto .redes a, .cover-consola .contacto .contenedor--switch .info__contacto .redes a, .contacto .cover-consola--xbox .contenedor--switch .info__contacto .redes a, .cover-consola--xbox .contacto .contenedor--switch .info__contacto .redes a, .contacto .cover-consola--playstation .contenedor--switch .info__contacto .redes a, .cover-consola--playstation .contacto .contenedor--switch .info__contacto .redes a, .contacto .cover-consola--switch .contenedor--switch .info__contacto .redes a, .cover-consola--switch .contacto .contenedor--switch .info__contacto .redes a, .contacto .accesorios .contenedor--playstation .info__contacto .redes a, .accesorios .contacto .contenedor--playstation .info__contacto .redes a, .contacto .accesorios--xbox .contenedor--playstation .info__contacto .redes a, .accesorios--xbox .contacto .contenedor--playstation .info__contacto .redes a, .contacto .accesorios--switch .contenedor--playstation .info__contacto .redes a, .accesorios--switch .contacto .contenedor--playstation .info__contacto .redes a, .contacto .accesorios--playstation .contenedor--playstation .info__contacto .redes a, .accesorios--playstation .contacto .contenedor--playstation .info__contacto .redes a {
-  color: white;
-}
 .contacto .contenedor .ubicacion, .contacto .cover-consola .contenedor--playstation .ubicacion, .cover-consola .contacto .contenedor--playstation .ubicacion, .contacto .cover-consola--xbox .contenedor--playstation .ubicacion, .cover-consola--xbox .contacto .contenedor--playstation .ubicacion, .contacto .cover-consola--playstation .contenedor--playstation .ubicacion, .cover-consola--playstation .contacto .contenedor--playstation .ubicacion, .contacto .cover-consola--switch .contenedor--playstation .ubicacion, .cover-consola--switch .contacto .contenedor--playstation .ubicacion, .contacto .cover-consola .contenedor--xbox .ubicacion, .cover-consola .contacto .contenedor--xbox .ubicacion, .contacto .cover-consola--xbox .contenedor--xbox .ubicacion, .cover-consola--xbox .contacto .contenedor--xbox .ubicacion, .contacto .cover-consola--playstation .contenedor--xbox .ubicacion, .cover-consola--playstation .contacto .contenedor--xbox .ubicacion, .contacto .cover-consola--switch .contenedor--xbox .ubicacion, .cover-consola--switch .contacto .contenedor--xbox .ubicacion, .contacto .cover-consola .contenedor--switch .ubicacion, .cover-consola .contacto .contenedor--switch .ubicacion, .contacto .cover-consola--xbox .contenedor--switch .ubicacion, .cover-consola--xbox .contacto .contenedor--switch .ubicacion, .contacto .cover-consola--playstation .contenedor--switch .ubicacion, .cover-consola--playstation .contacto .contenedor--switch .ubicacion, .contacto .cover-consola--switch .contenedor--switch .ubicacion, .cover-consola--switch .contacto .contenedor--switch .ubicacion, .contacto .accesorios .contenedor--playstation .ubicacion, .accesorios .contacto .contenedor--playstation .ubicacion, .contacto .accesorios--xbox .contenedor--playstation .ubicacion, .accesorios--xbox .contacto .contenedor--playstation .ubicacion, .contacto .accesorios--switch .contenedor--playstation .ubicacion, .accesorios--switch .contacto .contenedor--playstation .ubicacion, .contacto .accesorios--playstation .contenedor--playstation .ubicacion, .accesorios--playstation .contacto .contenedor--playstation .ubicacion {
-  width: 450px;
-  height: 450px;
+  width: 250px;
+  height: 250px;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
 }
-
-.forms {
-  display: flex;
-  justify-content: "";
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 5px;
+@media (min-width: 768px) {
+  .contacto .contenedor .ubicacion, .contacto .cover-consola .contenedor--playstation .ubicacion, .cover-consola .contacto .contenedor--playstation .ubicacion, .contacto .cover-consola--xbox .contenedor--playstation .ubicacion, .cover-consola--xbox .contacto .contenedor--playstation .ubicacion, .contacto .cover-consola--playstation .contenedor--playstation .ubicacion, .cover-consola--playstation .contacto .contenedor--playstation .ubicacion, .contacto .cover-consola--switch .contenedor--playstation .ubicacion, .cover-consola--switch .contacto .contenedor--playstation .ubicacion, .contacto .cover-consola .contenedor--xbox .ubicacion, .cover-consola .contacto .contenedor--xbox .ubicacion, .contacto .cover-consola--xbox .contenedor--xbox .ubicacion, .cover-consola--xbox .contacto .contenedor--xbox .ubicacion, .contacto .cover-consola--playstation .contenedor--xbox .ubicacion, .cover-consola--playstation .contacto .contenedor--xbox .ubicacion, .contacto .cover-consola--switch .contenedor--xbox .ubicacion, .cover-consola--switch .contacto .contenedor--xbox .ubicacion, .contacto .cover-consola .contenedor--switch .ubicacion, .cover-consola .contacto .contenedor--switch .ubicacion, .contacto .cover-consola--xbox .contenedor--switch .ubicacion, .cover-consola--xbox .contacto .contenedor--switch .ubicacion, .contacto .cover-consola--playstation .contenedor--switch .ubicacion, .cover-consola--playstation .contacto .contenedor--switch .ubicacion, .contacto .cover-consola--switch .contenedor--switch .ubicacion, .cover-consola--switch .contacto .contenedor--switch .ubicacion, .contacto .accesorios .contenedor--playstation .ubicacion, .accesorios .contacto .contenedor--playstation .ubicacion, .contacto .accesorios--xbox .contenedor--playstation .ubicacion, .accesorios--xbox .contacto .contenedor--playstation .ubicacion, .contacto .accesorios--switch .contenedor--playstation .ubicacion, .accesorios--switch .contacto .contenedor--playstation .ubicacion, .contacto .accesorios--playstation .contenedor--playstation .ubicacion, .accesorios--playstation .contacto .contenedor--playstation .ubicacion {
+    width: 550px;
+  }
 }
-.forms input, .forms textarea {
-  outline: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: 1px solid #388bfd;
-  width: 100%;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+@media (min-width: 768px) and (min-width: 992px) {
+  .contacto .contenedor .ubicacion, .contacto .cover-consola .contenedor--playstation .ubicacion, .cover-consola .contacto .contenedor--playstation .ubicacion, .contacto .cover-consola--xbox .contenedor--playstation .ubicacion, .cover-consola--xbox .contacto .contenedor--playstation .ubicacion, .contacto .cover-consola--playstation .contenedor--playstation .ubicacion, .cover-consola--playstation .contacto .contenedor--playstation .ubicacion, .contacto .cover-consola--switch .contenedor--playstation .ubicacion, .cover-consola--switch .contacto .contenedor--playstation .ubicacion, .contacto .cover-consola .contenedor--xbox .ubicacion, .cover-consola .contacto .contenedor--xbox .ubicacion, .contacto .cover-consola--xbox .contenedor--xbox .ubicacion, .cover-consola--xbox .contacto .contenedor--xbox .ubicacion, .contacto .cover-consola--playstation .contenedor--xbox .ubicacion, .cover-consola--playstation .contacto .contenedor--xbox .ubicacion, .contacto .cover-consola--switch .contenedor--xbox .ubicacion, .cover-consola--switch .contacto .contenedor--xbox .ubicacion, .contacto .cover-consola .contenedor--switch .ubicacion, .cover-consola .contacto .contenedor--switch .ubicacion, .contacto .cover-consola--xbox .contenedor--switch .ubicacion, .cover-consola--xbox .contacto .contenedor--switch .ubicacion, .contacto .cover-consola--playstation .contenedor--switch .ubicacion, .cover-consola--playstation .contacto .contenedor--switch .ubicacion, .contacto .cover-consola--switch .contenedor--switch .ubicacion, .cover-consola--switch .contacto .contenedor--switch .ubicacion, .contacto .accesorios .contenedor--playstation .ubicacion, .accesorios .contacto .contenedor--playstation .ubicacion, .contacto .accesorios--xbox .contenedor--playstation .ubicacion, .accesorios--xbox .contacto .contenedor--playstation .ubicacion, .contacto .accesorios--switch .contenedor--playstation .ubicacion, .accesorios--switch .contacto .contenedor--playstation .ubicacion, .contacto .accesorios--playstation .contenedor--playstation .ubicacion, .accesorios--playstation .contacto .contenedor--playstation .ubicacion {
+    width: 450px;
+    height: 450px;
+  }
+}
+@media (min-width: 992px) {
+  .contacto .contenedor, .contacto .cover-consola .contenedor--playstation, .cover-consola .contacto .contenedor--playstation, .contacto .cover-consola--xbox .contenedor--playstation, .cover-consola--xbox .contacto .contenedor--playstation, .contacto .cover-consola--playstation .contenedor--playstation, .cover-consola--playstation .contacto .contenedor--playstation, .contacto .cover-consola--switch .contenedor--playstation, .cover-consola--switch .contacto .contenedor--playstation, .contacto .cover-consola .contenedor--xbox, .cover-consola .contacto .contenedor--xbox, .contacto .cover-consola--xbox .contenedor--xbox, .cover-consola--xbox .contacto .contenedor--xbox, .contacto .cover-consola--playstation .contenedor--xbox, .cover-consola--playstation .contacto .contenedor--xbox, .contacto .cover-consola--switch .contenedor--xbox, .cover-consola--switch .contacto .contenedor--xbox, .contacto .cover-consola .contenedor--switch, .cover-consola .contacto .contenedor--switch, .contacto .cover-consola--xbox .contenedor--switch, .cover-consola--xbox .contacto .contenedor--switch, .contacto .cover-consola--playstation .contenedor--switch, .cover-consola--playstation .contacto .contenedor--switch, .contacto .cover-consola--switch .contenedor--switch, .cover-consola--switch .contacto .contenedor--switch, .contacto .accesorios .contenedor--playstation, .accesorios .contacto .contenedor--playstation, .contacto .accesorios--xbox .contenedor--playstation, .accesorios--xbox .contacto .contenedor--playstation, .contacto .accesorios--switch .contenedor--playstation, .accesorios--switch .contacto .contenedor--playstation, .contacto .accesorios--playstation .contenedor--playstation, .accesorios--playstation .contacto .contenedor--playstation {
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

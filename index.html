@@ -8,7 +8,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>GamerStore | Los mejores videojuegos, consolas y accesorios.</title>
 </head>
@@ -34,9 +34,66 @@
     </header>
 
     <main>
-        
-        <section class="carrusel">
 
+        <section class="carrusel">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/cover_item_one.jpg" class="d-none d-xl-block w-100" alt="...">
+                        <img src="img/cover_item_one_tablet.jpg" class="d-none d-md-block d-xl-none w-100" alt="...">
+                        <img src="img/cover_item_one_mobile.jpg" class="d-block d-md-none w-100" alt="...">
+                        <div class="carousel-caption d-block">
+                            <h5>Hi - Fi Rush</h5>
+                            <p>Siente el ritmo.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/cover_item_two.jpg" class="d-none d-xl-block w-100" alt="...">
+                        <img src="img/cover_item_two_tablet.jpg" class="d-none d-md-block d-xl-none w-100" alt="...">
+                        <img src="img/cover_item_two_mobile.jpg" class="d-block d-md-none w-100" alt="...">
+                        <div class="carousel-caption d-block">
+                            <h5>Fall Guys</h5>
+                            <p>Competitivo y cooperativo: salta entre todos contra todos competitivos y desafíos cooperativos, ¡o enfréntate al Blunderdome con hasta 3 amigos!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/cover_item_three.jpg" class="d-none d-xl-block w-100" alt="...">
+                        <img src="img/cover_item_three_tablet.jpg" class="d-none d-md-block d-xl-none w-100" alt="...">
+                        <img src="img/cover_item_three_mobile.jpg" class="d-block d-md-none w-100" alt="...">
+                        <div class="carousel-caption d-block">
+                            <h5>GoldenEye 007</h5>
+                            <p>¡James Bond regresa! Vuelve a vivir la jugabilidad atemporal que definió a una generación mientras guías a 007 en una aventura de trotamundos</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="apartados">
+            <div class="contenedor">
+                <i class="bi bi-controller"></i>
+                <i class="bi bi-playstation"></i>
+                <i class="bi bi-dpad"></i>
+                <i class="bi bi-envelope-exclamation-fill"></i>
+            </div>
         </section>
 
         <section class="galeria">
@@ -47,7 +104,8 @@
                 <div class="contenido">
                     <span class="plataformas">XBOX - PLAYSTATION - PC</span>
                     <span class="nombre">Age of Empires II: Definitive Edition</span>
-                    <span class="descripcion">Ahora disponible para consolas y en la nube. Juega con Xbox Game Pass Ultimate.</span>
+                    <span class="descripcion">Ahora disponible para consolas y en la nube. Juega con Xbox Game Pass
+                        Ultimate.</span>
                 </div>
             </div>
             <div class="gow" data-aos="fade-up" data-aos-duration="3000">
@@ -57,7 +115,9 @@
                 <div class="contenido">
                     <span class="plataformas">PLAYSTATION - PC</span>
                     <span class="nombre">God Of War Ragnarök</span>
-                    <span class="descripcion">Desde Santa Monica Studio llega la secuela del aclamado por la crítica, God of War (2018). Embárcate en un viaje épico y sincero, a medida que Kratos y Atreus luchan por no rendirse y liberarse en God of War Ragnarök.</span>
+                    <span class="descripcion">Desde Santa Monica Studio llega la secuela del aclamado por la crítica,
+                        God of War (2018). Embárcate en un viaje épico y sincero, a medida que Kratos y Atreus luchan
+                        por no rendirse y liberarse en God of War Ragnarök.</span>
                 </div>
             </div>
             <div class="mandos" data-aos="fade-down" data-aos-duration="3000">
@@ -77,7 +137,8 @@
                 <div class="contenido">
                     <span class="plataformas">PC - PLAYSTATION - XBOX</span>
                     <span class="nombre">Minecraft</span>
-                    <span class="descripcion">¡Pon la mira en la aventura, deambula sin rumbo o persigue algo nuevo en la Actualización Salvaje! Las posibilidades son ilimitadas y las tienes todas.</span>
+                    <span class="descripcion">¡Pon la mira en la aventura, deambula sin rumbo o persigue algo nuevo en
+                        la Actualización Salvaje! Las posibilidades son ilimitadas y las tienes todas.</span>
                 </div>
             </div>
             <div class="fall" data-aos="fade-right" data-aos-duration="6000">
@@ -86,8 +147,9 @@
                 </div>
                 <div class="contenido">
                     <span class="plataformas">PC - PLAYSTATION - XBOX</span>
-                    <span class="nombre">Fall  Guys</span>
-                    <span class="descripcion">Fall Guys admite juegos cruzados, fiestas multiplataforma y progresión cruzada a través de tu cuenta de Epic Games.</span>
+                    <span class="nombre">Fall Guys</span>
+                    <span class="descripcion">Fall Guys admite juegos cruzados, fiestas multiplataforma y progresión
+                        cruzada a través de tu cuenta de Epic Games.</span>
                 </div>
             </div>
         </section>
@@ -96,7 +158,9 @@
             <div class="contenedor">
                 <div class="nosotros__texto">
                     <h3>GamerStore</h3>
-                    <p>En consolas y videojuegos sé parte de la evolución tecnológica y disfruta en tu hogar una experiencia completa de alta fidelidad en imagen y sonido, diseñados para cada consola. Descubre nuestras increíbles consolas y videojuegosque harán más tú experiencia.</p>
+                    <p>En consolas y videojuegos sé parte de la evolución tecnológica y disfruta en tu hogar una
+                        experiencia completa de alta fidelidad en imagen y sonido, diseñados para cada consola. Descubre
+                        nuestras increíbles consolas y videojuegosque harán más tú experiencia.</p>
                 </div>
                 <div class="nosotros__imagen">
                     <img src="./img/nosotros.jpg" alt="" class="img-fluid">
@@ -114,7 +178,8 @@
                     <a href="">GamerStore</a>
                 </div>
                 <div class="terms">
-                    <p>Los mejores videojuegos, accesorios y las consolas de ultima generacion, disponbles en GamerStore.</p>
+                    <p>Los mejores videojuegos, accesorios y las consolas de ultima generacion, disponbles en
+                        GamerStore.</p>
                 </div>
             </div>
             <div class="box__footer">
@@ -133,9 +198,12 @@
 
             <div class="box__footer">
                 <h4>Redes Sociales</h4>
-                <a href="https://www.facebook.com/profile.php?id=100010329643690" target="_blank"> <i class="fab fa-facebook-square"></i> Facebook</a>
-                <a href="https://api.whatsapp.com/send/?phone=525564100068&text&app_absent=0"><i class="fab fa-twitter-square"></i> WhatsApp</a>
-                <a href="https://www.instagram.com/robertomiranda87/"><i class="fab fa-instagram-square"></i> Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=100010329643690" target="_blank"> <i
+                        class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="https://api.whatsapp.com/send/?phone=525564100068&text&app_absent=0"><i
+                        class="fab fa-twitter-square"></i> WhatsApp</a>
+                <a href="https://www.instagram.com/robertomiranda87/"><i class="fab fa-instagram-square"></i>
+                    Instagram</a>
             </div>
 
         </div>
@@ -145,7 +213,7 @@
             <p>Todos los derechos reservados © 2023 <b>Roberto Miranda</b></p>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/script.js"></script>
     <script>

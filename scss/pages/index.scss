@@ -1,6 +1,25 @@
 .carrusel{
-    height: 100vh;
+    height: auto;
+    padding: 0;
+    .carousel-item{
+        img{
+            filter: brightness(.5);
+        }
+    }
 }
+
+.apartados{
+    .contenedor{
+        @include flex(space-evenly, center, row, 20px);
+        flex-wrap: wrap;
+        padding: 20px;
+        font-size: 68px;
+        color: white;
+        border-radius: 5px;
+        max-width: 900px;
+    }
+}
+
 .galeria{
     padding: 5px;
     @include grid(1fr, 5px, center, center);

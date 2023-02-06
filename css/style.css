@@ -47,6 +47,23 @@ section {
   text-align: justify;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #008dff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 @font-face {
   font-family: MuseoSansRounded;
   src: url("./font/MuseoSansRounded100.otf"), url("./font/MuseoSansRounded300.otf"), url("./font/MuseoSansRounded500.otf"), url("./font/MuseoSansRounded700.otf"), url("./font/MuseoSansRounded900.otf"), url("./font/MuseoSansRounded1000.otf");

@@ -1,38 +1,53 @@
-// .contacto{
-//     &__info{
-//         padding: 10px;
-//         margin: 20px 0px;
-//         h2{
-//             margin-bottom: 10px;
-//         }
-//         &-icons{
-//             margin: 15px 0px;
-//             font-size: 22px;
-//         }
-//         & ul li{
-//             padding: 5px 0px;
-//         }
-//     }
-//     &__mapa{
-//         padding: 10px;
-//         margin: 20px 0px;
-//         h2{
-//             margin-bottom: 10px;
-//         }
-//         iframe{
-//             border: none;
-//             border-radius: 10px;
-//         }
-//     }
-// }
-// @include mediano(){
-//     .contacto{
-//         width: 80%;
-//         margin: 20px auto;
-//     }
-// }
-// @include grande(){
-//     .contacto{
-//         max-width: 900px;
-//     }
-// }
+.contacto{
+    background-image: url(../img/contacto-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .contenedor{
+        @include flex(space-evenly, center, row, "");
+        padding: 10px;
+        .info__contacto{
+            width: 40%;
+            color: white;
+            .texto{
+                @include flex("", "", column, 10px);
+                .contacto_titulo{
+                    h3{
+                        font-weight: 400;
+                        font-size: 34px;
+                    }
+                }
+                .datos_contacto{
+                    @include flex("", "", column, 5px);
+                }
+            }
+            .redes{
+                @include flex(space-evenly, center, row, "");
+                padding: 10px;
+                font-size: 28px;
+                a{
+                    color: white;
+                }
+            }
+        }
+        .ubicacion{
+            width: 450px;
+            height: 450px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+        }
+    }
+}
+
+.forms{
+    @include flex("", flex-start, column, 5px);
+    input, textarea{
+        outline: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid $colorSecundario;
+        width: 100%;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+    }
+}

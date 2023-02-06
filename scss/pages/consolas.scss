@@ -1,76 +1,100 @@
-.playstation{
-    height: 80vh;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cover-playstation.webp");
+.consolas{
+    .contenedor{
+        @include grid(repeat(2, 1fr), 5px, flex-start, flex-start);
+        @include query(sm){
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include query(md){
+            grid-template-columns: repeat(4, 1fr);
+        }
+        @include query(lg){
+            grid-template-columns: repeat(5, 1fr);
+        }
+        @include query(xl){
+            grid-template-columns: repeat(6, 1fr);
+        }
+        .consola{
+            max-width: 230px;
+            overflow: hidden;
+            border-radius: 5px;
+            background-color: #141414;
+            @include flex("", "", column, 5px);
+            .cuerpo{
+                padding: 10px 15px;
+                h5{
+                    font-weight: 400;
+                    color: green;
+                }
+                p{
+                    color: white;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.cover-consola{
+    height: 40vh;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover ;
+    background-size: cover;
+    &--xbox{
+        @extend .cover-consola;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cover-xbox-pfone.png");
+    }
+    &--playstation{
+        @extend .cover-consola;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cover-playstation.webp");
+    }
+    &--switch{
+        @extend .cover-consola;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/cover-switch.jpg");
+    }
     .contenedor{
         @include flex(flex-start, center, row, 0px);
         .texto{
-            width: 50%;
-            padding:  0px 40px;
+            width: 60%;
+            padding:  0px 0px 0px 20px;
+            @include query(md){
+                width: 50%; 
+            }
             h4, h3{
                 color: white;
                 font-weight: 400;
             }
         }
-    }
-}
-
-.xbox{
-    height: 80vh;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cover-xbox-pfone.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover ;
-    .contenedor{
-        @include flex(flex-end, center, row, 0px);
-        .texto{
-            width: 50%;
-            padding:  0px 40px;
-            h3{
-                @include font(#9bf00b, 28px, 400, right);
-            }
-            h4{
-                @include font(white, 24px, 400, right);
-            }
+        &--playstation{
+            @extend .contenedor;
         }
-    }
-}
-
-.switch{
-    height: 80vh;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../img/cover-switch.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover ;
-    .contenedor{
-        @include flex(flex-end, center, row, 0px);
-        .texto{
-            width: 50%;
-            padding:  0px 40px;
-            h3{
-                @include font(#feca07, 28px, 400, right);
-            }
-            h4{
-                @include font(white, 24px, 400, right);
-            }
-        }
-    }
-}
-
-.consola{
-    width: 250px;
-    overflow: hidden;
-}
-
-@include query(md){
-    .xbox{
-        .contenedor{
-            flex-direction: row;
+        &--xbox{
+            @extend .contenedor;
+            justify-content: flex-end;
+            padding:  0px 20px 0px 0px;
             .texto{
+                text-align: right;
                 width: 50%;
             }
         }
+        &--switch{
+            @extend .contenedor;
+            justify-content: flex-end;
+            padding:  0px 30px 0px 0px;
+            .texto{
+                width: 50%;
+                text-align: right;
+                h2{
+                    font-size: 32px;
+                    color: #feca07;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    @include query(sm){
+        height: 50vh;
+    }
+    @include query(md){
+        height: 80vh;
     }
 }

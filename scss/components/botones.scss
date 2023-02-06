@@ -1,7 +1,14 @@
-.btn{
-  border: none;
-  padding: 10px 20px;
+button{
+  font-size: 14px;
+  padding: 6px 15px;
+  border: 1px solid $colorSecundario;
+  border-radius: 5px;
+  background-color: $colorSecundario;
   color: white;
-  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
   cursor: pointer;
+  &:hover{
+    background-color: transparent;
+    color: $colorSecundario;
+  }
 }

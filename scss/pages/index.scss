@@ -10,13 +10,12 @@
 
 .apartados{
     .contenedor{
-        @include flex(space-evenly, center, row, 20px);
-        flex-wrap: wrap;
-        padding: 20px;
-        font-size: 68px;
-        color: white;
-        border-radius: 5px;
+        @include grid(repeat(2, 1fr), 10px, center, center);
+        padding:  40px 20px;
         max-width: 900px;
+        a{
+            font-size: 56px;
+        }
     }
 }
 
@@ -135,7 +134,7 @@
         @include flex(center,"",column, 1px);
         .nosotros__texto{
             h3{
-                font-weight: 700;
+                font-weight: 400;
             }
             padding: 20px;
             background-color: #1c3049;
@@ -145,6 +144,14 @@
 }
 
 @include query(sm){
+
+    .apartados{
+        .contenedor{
+            grid-template-columns: repeat(4, 1fr);
+            padding:  60px 20px;
+        }
+    }
+
     .nosotros{
         .contenedor{
             @include flex(space-evenly, center, row, 1px);

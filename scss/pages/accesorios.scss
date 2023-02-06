@@ -1,0 +1,76 @@
+.cover-accesorios{
+    height: 60vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cover-accesorios.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flex(center, center, column, "");
+    h2,p{
+        @include font(white, "", 400, center);
+    }
+}
+
+.accesorios{
+    background-color: white;
+    padding: 40px 20px;
+    .contenedor{
+        @include flex("", center, column, 10px);
+        height: auto;
+        .imagen{
+            width: 60%;
+            @include query(sm){
+                width: 50%;
+            }
+            @include query(md){
+                width: 40%;
+            }
+            @include query(lg){
+                width: 60%;
+            }
+        }
+        .accesorios{
+            @include grid(repeat(2, minmax(min-content, 1fr)), 5px, center, center);
+            padding: 20px;
+            background-color: #f9fbfc;
+            border: 1px solid rgb(160, 160, 160);
+            border-radius: 10px;
+            overflow: hidden;
+            .accesorio{
+                box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1);
+                overflow: hidden;
+                border-radius: 5px;
+                &:nth-of-type(n+10){
+                    display: none;
+                    @include query(md){
+                        display: block;
+                    }
+                }
+            }
+            @include query(sm){
+                grid-template-columns: repeat(3, minmax(min-content, 1fr));
+                @include query(md){
+                    grid-template-columns: repeat(4, minmax(min-content, 1fr));
+                }
+            }
+        }
+        @include query(md){
+            flex-direction: row-reverse;
+        }
+        &--playstation{
+            @extend .contenedor;
+            flex-direction: row;
+        }
+    }
+    &--xbox{
+        @extend .accesorios;
+        background-color: #107c10;
+    }
+    &--switch{
+        @extend .accesorios;
+        background-color: #ff0001;
+    }
+    &--playstation{
+        @extend .accesorios;
+        background-color: #003087;
+    }
+}

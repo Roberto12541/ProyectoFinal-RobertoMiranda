@@ -26,8 +26,13 @@ background: #555;
     font-family: MuseoSansRounded, sans-serif;
     list-style: none;
 }
+textarea{
+    resize: none;
+}
 a{
     text-decoration: none;
+    color: white;
+    transition: ease-in-out 400ms;
 }
 h1,h2,h3,h4,h5,h6{
     font-weight: 1000;
@@ -37,4 +42,12 @@ p{
 }
 body{
     background-color: $fondo;
+}
+button{
+    cursor: pointer;
+}
+
+a:hover{
+    color: $colorSecundario;
+    transform: scale(1.1);
 }

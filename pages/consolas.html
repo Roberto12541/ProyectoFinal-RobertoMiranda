@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,80 +18,231 @@
 
     <header>
         <div class="contenedor">
-            <a href="../index.html" id="logo">GAMERSTORE</a>
+            <a href="../index.html" id="logo">G<span class="mayus d-none d-sm-inline" data-aos="fade-right" data-aos-duration="3000">AMER</span>S<span class="mayus d-none d-sm-inline" data-aos="fade-up" data-aos-duration="1500">TORE</span></a>
             <div class="menu">
                 <nav>
                     <ul>
-                        <li><a href="../index.html" class="item-nav">Inicio</a></li>
-                        <li><a href="./pages/consolas.html" class="item-nav-activo">Consolas</a></li>
-                        <li><a href="./pages/juegos.html" class="item-nav">Juegos</a></li>
-                        <li><a href="./pages/accesorios.html" class="item-nav">Accesorios</a></li>
-                        <li><a href="./pages/contacto.html" class="item-nav">Contacto</a></li>
+                        <li data-aos="fade-right" data-aos-duration="1500"><a href="../index.html" class="item-nav">Inicio</a></li>
+                        <li data-aos="fade-down" data-aos-duration="1500"><a href="./consolas.html" class="item-nav-activo">Consolas</a></li>
+                        <li data-aos="fade-up" data-aos-duration="1500"><a href="./juegos.html" class="item-nav">Juegos</a></li>
+                        <li data-aos="fade-down" data-aos-duration="1500"><a href="./accesorios.html" class="item-nav">Accesorios</a></li>
+                        <li data-aos="fade-left" data-aos-duration="1500"><a href="./contacto.html" class="item-nav">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
-            <i class="bi bi-list-nested" id="icon_menu"></i>
+            <i class="fa-solid fa-bars" id="icon_menu"></i>
         </div>
     </header>
 
     <main>
         
-        <section class="playstation d-none d-sm-block">
-            <div class="contenedor">
-                <div class="texto">
+        <section class="cover-consola--playstation">
+            <div class="contenedor--playstation">
+                <div class="texto" data-aos="fade-up" data-aos-duration="2000">
                     <h3>PlayStation 5</h3>
-                    <h4>Descubre los juegos que quieres, desde éxitos exclusivos a independientes innovadores; todos cobran vida con el poder de la consola PS5™.</h4>
+                    <h4 class="d-none d-sm-block">Descubre los juegos que quieres, desde éxitos exclusivos a independientes innovadores; todos cobran vida con el poder de la consola PS5™.</h4>
                 </div>
             </div>
         </section>
 
-        <section class="consolasPlayStation">
+        <section class="consolas" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="100">
             <div class="contenedor">
                 <div class="consola">
                     <div class="imagen">
-                        <img src="../img/xbox-series-s.webp" alt="" class="img-fluid">
+                        <img src="../img/playstation-5-god.webp" alt="" class="img-fluid">
                     </div>
-                    <div class="cuerpo">
-                        <h4>$9999.99</h4>
+                    <div class="cuerpo d-none d-sm-block">
+                        <h5>$9999.99</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi.</p>
+                    </div>
+                </div>
+                <div class="consola">
+                    <div class="imagen">
+                        <img src="../img/playstation-5-god.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="cuerpo d-none d-sm-block">
+                        <h5>$9999.99</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi.</p>
+                    </div>
+                </div>
+                <div class="consola">
+                    <div class="imagen">
+                        <img src="../img/playstation-5-god.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="cuerpo d-none d-sm-block">
+                        <h5>$9999.99</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi.</p>
+                    </div>
+                </div>
+                <div class="consola">
+                    <div class="imagen">
+                        <img src="../img/playstation-5-god.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="cuerpo d-none d-sm-block">
+                        <h5>$9999.99</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi.</p>
+                    </div>
+                </div>
+                <div class="consola">
+                    <div class="imagen">
+                        <img src="../img/playstation-5-god.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="cuerpo d-none d-sm-block">
+                        <h5>$9999.99</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi.</p>
+                    </div>
+                </div>
+                <div class="consola">
+                    <div class="imagen">
+                        <img src="../img/playstation-5-god.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="cuerpo d-none d-sm-block">
+                        <h5>$9999.99</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="xbox d-none d-sm-block">
-            <div class="contenedor">
-                <div class="texto">
+        <section class="cover-consola--xbox" data-aos="fade-up" data-aos-duration="3000" data-aos-offset="150">
+            <div class="contenedor--xbox">
+                <div class="texto" data-aos="fade-right" data-aos-duration="2000" data-aos-offset="220">
                     <h3>Xbox Series S</h3>
-                    <h4>Descubre los juegos que quieres, desde éxitos exclusivos a independientes innovadores; todos cobran vida con el poder de la consola PS5™.</h4>
+                    <h4 class="d-none d-sm-block">Descubre los juegos que quieres, desde éxitos exclusivos a independientes innovadores; todos cobran vida con el poder de la consola PS5™.</h4>
                 </div>
             </div>
         </section>
 
-        <section class="consolasXbox">
+        <section class="consolas" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="100">
             <div class="contenedor">
-
-            </div>
-        </section>
-
-        <section class="switch d-none d-sm-block">
-            <div class="contenedor">
-                <div class="texto">
-                    <h3>Nintendo Switch</h3>
-                    <h4>Descubre los juegos que quieres, desde éxitos exclusivos a independientes innovadores; todos cobran vida con el poder de la consola PS5™.</h4>
+                <div class="consola">
+                    <div class="imagen">
+                        <img src="../img/playstation-5-god.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="cuerpo d-none d-sm-block">
+                        <h5>$9999.99</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi.</p>
+                    </div>
+                </div>
+                <div class="consola">
+                    <div class="imagen">
+                        <img src="../img/playstation-5-god.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="cuerpo d-none d-sm-block">
+                        <h5>$9999.99</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi.</p>
+                    </div>
+                </div>
+                <div class="consola">
+                    <div class="imagen">
+                        <img src="../img/playstation-5-god.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="cuerpo d-none d-sm-block">
+                        <h5>$9999.99</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi.</p>
+                    </div>
+                </div>
+                <div class="consola">
+                    <div class="imagen">
+                        <img src="../img/playstation-5-god.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="cuerpo d-none d-sm-block">
+                        <h5>$9999.99</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi.</p>
+                    </div>
+                </div>
+                <div class="consola">
+                    <div class="imagen">
+                        <img src="../img/playstation-5-god.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="cuerpo d-none d-sm-block">
+                        <h5>$9999.99</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi.</p>
+                    </div>
+                </div>
+                <div class="consola">
+                    <div class="imagen">
+                        <img src="../img/playstation-5-god.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="cuerpo d-none d-sm-block">
+                        <h5>$9999.99</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="consolasSwitch">
-            <div class="contenedor">
+        <section class="cover-consola--switch" data-aos="fade-up" data-aos-duration="3000" data-aos-offset="150">
+            <div class="contenedor--switch">
+                <div class="texto" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="210">
+                    <h2>Nintendo Switch</h2>
+                    <h4 class="d-none d-sm-block">Descubre los juegos que quieres, desde éxitos exclusivos a independientes innovadores; todos cobran vida con el poder de la consola PS5™.</h4>
+                </div>
+            </div>
+        </section>
 
+        <section class="consolas" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="100">
+            <div class="contenedor">
+                <div class="consola">
+                    <div class="imagen">
+                        <img src="../img/playstation-5-god.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="cuerpo d-none d-sm-block">
+                        <h5>$9999.99</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi.</p>
+                    </div>
+                </div>
+                <div class="consola">
+                    <div class="imagen">
+                        <img src="../img/playstation-5-god.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="cuerpo d-none d-sm-block">
+                        <h5>$9999.99</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi.</p>
+                    </div>
+                </div>
+                <div class="consola">
+                    <div class="imagen">
+                        <img src="../img/playstation-5-god.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="cuerpo d-none d-sm-block">
+                        <h5>$9999.99</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi.</p>
+                    </div>
+                </div>
+                <div class="consola">
+                    <div class="imagen">
+                        <img src="../img/playstation-5-god.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="cuerpo d-none d-sm-block">
+                        <h5>$9999.99</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi.</p>
+                    </div>
+                </div>
+                <div class="consola">
+                    <div class="imagen">
+                        <img src="../img/playstation-5-god.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="cuerpo d-none d-sm-block">
+                        <h5>$9999.99</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi.</p>
+                    </div>
+                </div>
+                <div class="consola">
+                    <div class="imagen">
+                        <img src="../img/playstation-5-god.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="cuerpo d-none d-sm-block">
+                        <h5>$9999.99</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
     </main>
 
-    <footer data-aos="fade-up" data-aos-duration="3000">
+    <footer data-aos="fade-up" data-aos-duration="600" data-aos-offset="50">
 
         <div class="contenedor">
             <div class="box__footer">
@@ -133,6 +285,8 @@
             <p>Todos los derechos reservados © 2023 <b>Roberto Miranda</b></p>
         </div>
     </footer>
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/script.js"></script>

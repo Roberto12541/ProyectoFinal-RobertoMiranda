@@ -1,0 +1,46 @@
+.juegos{
+    background-image: url(../img/juegos-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 38px;
+        color: white;
+        text-align: center;
+        font-weight: 400;
+        padding: 0px 0px 30px 0px;
+        .mayus{
+            font-size: 27px;
+        }
+    }
+    .contenedor{
+        @include grid(repeat(2, 1fr), 10px, flex-start, center);
+        .juego{
+            max-width: 220px;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: all 700ms;
+        }
+        @include query(sm){
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        @include query(md){
+            grid-template-columns: repeat(4, 1fr);
+        }
+        @include query(lg){
+            gap: 20px;
+        }
+        @include query(xl){
+            grid-template-columns: repeat(5, 220px);
+        }
+    }
+}
+
+
+
+
+
+
+

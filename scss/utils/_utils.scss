@@ -1,7 +1,8 @@
 // Colores de pagina
-$colorPrimario: #008dff;
-$colorSecundario: #1b1464;
+$colorPrimario: #06f2fe;
+$colorSecundario: #388bfd;
 $fondo: #282a37;
+$nintendo: #ff0001;
 
 $colores: (
     primario: $colorPrimario,
@@ -45,4 +46,30 @@ $text-align: (
     .t-#{$alineacion}{
         text-align: $valor;
     }
+}
+// Efectos hover por consola
+.playstation-item:hover{
+    filter: drop-shadow(0px 0px 100px #008ae0);
+    transform: scale(1.04);
+    transition: all 1000ms;
+}
+
+.xbox-item:hover{
+    filter: drop-shadow(0px 0px 100px #107b10);
+    transform: scale(1.1);
+    transition: all 1000ms;
+    color: #107b10;
+}
+
+.switch-item:hover{
+    filter: drop-shadow(0px 0px 100px #e60012);
+    transform: scale(1.1);
+    transition: all 1000ms;
+    color: #e60012;
+}
+.pc-item:hover{
+    filter: drop-shadow(0px 0px 100px #FAA307);
+    transform: scale(1.1);
+    transition: all 700ms;
+    color: #FAA307;
 }

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,62 +18,59 @@
 
     <header>
         <div class="contenedor">
-            <a href="../index.html" id="logo" data-aos="fade-right" data-aos-duration="1500">GamerStore</a>
+            <a href="../index.html" id="logo">G<span class="mayus d-none d-sm-inline" data-aos="fade-right" data-aos-duration="3000">AMER</span>S<span class="mayus d-none d-sm-inline" data-aos="fade-up" data-aos-duration="1500">TORE</span></a>
             <div class="menu">
                 <nav>
                     <ul>
                         <li data-aos="fade-right" data-aos-duration="1500"><a href="../index.html" class="item-nav">Inicio</a></li>
                         <li data-aos="fade-down" data-aos-duration="1500"><a href="./consolas.html" class="item-nav">Consolas</a></li>
-                        <li data-aos="fade-up" data-aos-duration="1500"><a href="./juegos.html" class="item-nav">Juegos</a></li>
+                        <li data-aos="fade-up" data-aos-duration="1500"><a href="./juegos.html" class="item-nav-activo">Juegos</a></li>
                         <li data-aos="fade-down" data-aos-duration="1500"><a href="./accesorios.html" class="item-nav">Accesorios</a></li>
-                        <li data-aos="fade-left" data-aos-duration="1500"><a href="./contacto.html" class="item-nav-activo">Contacto</a></li>
+                        <li data-aos="fade-left" data-aos-duration="1500"><a href="./contacto.html" class="item-nav">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
-            <i class="bi bi-list-nested" id="icon_menu"></i>
+            <i class="fa-solid fa-bars" id="icon_menu"></i>
         </div>
     </header>
 
     <main>
 
-        <section class="contacto">
+        <section class="juegos" data-aos="fade-down" data-aos-duration="1000">
+            <p>T<span class="mayus">ODOS LOS JUEGOS</span></p>
             <div class="contenedor">
-                <div class="info__contacto" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-sine">
-                    <div class="texto">
-                        <div class="contacto_titulo">
-                            <h3>Contacto</h3>
-                        </div>
-                        <div class="datos_contacto">
-                            <strong>Direccion:</strong>
-                            <span>Av. Paseo de la Reforma, Juárez, Cuauhtémoc, 06500 Ciudad de México, CDMX.</span>
-                            <span><strong>Telefono: </strong>55-64-10-00-68</span>
-                        </div>
-                    </div>
-                    <div class="redes">
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-whatsapp"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                    </div>
-                    <form action="" class="forms">
-                        <label for="">Nombre:</label>
-                        <input type="text" placeholder="Ingrese su nombre">
-                        <label for="">Correo:</label>
-                        <input type="email" placeholder="Ingrese su correo electronico">
-                        <label for="">Mensaje:</label>
-                        <textarea name="" cols="30" rows="3" placeholder="Describa brevemente la duda o aclaracion"></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
+                <div class="juego playstation-item">
+                    <img src="../img/game-gow-ragnarok.jpeg" alt="" class="img-fluid">
                 </div>
-                <div class="ubicacion" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease-in-sine">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6636.867741202619!2d-99.17090729628899!3d19.427149519568466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sEl%20%C3%81ngel%20de%20la%20Independencia!5e0!3m2!1ses-419!2smx!4v1675677938894!5m2!1ses-419!2smx" width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="juego xbox-item">
+                    <div class="imagen">
+                        <img src="../img/game-mortal-kombatt.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="juego switch-item">
+                    <div class="imagen">
+                        <img src="../img/game-mario-kingdom.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="juego playstation-item">
+                    <img src="../img/game-gow-ragnarok.jpeg" alt="" class="img-fluid">
+                </div>
+                <div class="juego xbox-item">
+                    <div class="imagen">
+                        <img src="../img/game-mortal-kombatt.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="juego switch-item">
+                    <div class="imagen">
+                        <img src="../img/game-mario-kingdom.jpg" alt="" class="img-fluid">
+                    </div>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer data-aos="fade-up" data-aos-duration="600" data-aos-offset="50">
+    <footer data-aos="fade-up" data-aos-duration="600" data-aos-offset="100">
 
         <div class="contenedor">
             <div class="box__footer">
@@ -115,6 +113,8 @@
             <p>Todos los derechos reservados © 2023 <b>Roberto Miranda</b></p>
         </div>
     </footer>
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>

@@ -1,0 +1,76 @@
+.playstation{
+    height: 80vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cover-playstation.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    .contenedor{
+        @include flex(flex-start, center, row, 0px);
+        .texto{
+            width: 50%;
+            padding:  0px 40px;
+            h4, h3{
+                color: white;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.xbox{
+    height: 80vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cover-xbox-pfone.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    .contenedor{
+        @include flex(flex-end, center, row, 0px);
+        .texto{
+            width: 50%;
+            padding:  0px 40px;
+            h3{
+                @include font(#9bf00b, 28px, 400, right);
+            }
+            h4{
+                @include font(white, 24px, 400, right);
+            }
+        }
+    }
+}
+
+.switch{
+    height: 80vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../img/cover-switch.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    .contenedor{
+        @include flex(flex-end, center, row, 0px);
+        .texto{
+            width: 50%;
+            padding:  0px 40px;
+            h3{
+                @include font(#feca07, 28px, 400, right);
+            }
+            h4{
+                @include font(white, 24px, 400, right);
+            }
+        }
+    }
+}
+
+.consola{
+    width: 250px;
+    overflow: hidden;
+}
+
+@include query(md){
+    .xbox{
+        .contenedor{
+            flex-direction: row;
+            .texto{
+                width: 50%;
+            }
+        }
+    }
+}

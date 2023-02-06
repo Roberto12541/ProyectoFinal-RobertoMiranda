@@ -524,5 +524,103 @@ footer .contenedor {
     height: 100%;
   }
 }
+.playstation {
+  height: 80vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cover-playstation.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.playstation .contenedor {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 0px;
+}
+.playstation .contenedor .texto {
+  width: 50%;
+  padding: 0px 40px;
+}
+.playstation .contenedor .texto h4, .playstation .contenedor .texto h3 {
+  color: white;
+  font-weight: 400;
+}
+
+.xbox {
+  height: 80vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cover-xbox-pfone.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.xbox .contenedor {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  gap: 0px;
+}
+.xbox .contenedor .texto {
+  width: 50%;
+  padding: 0px 40px;
+}
+.xbox .contenedor .texto h3 {
+  color: #9bf00b;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: right;
+}
+.xbox .contenedor .texto h4 {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: right;
+}
+
+.switch {
+  height: 80vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../img/cover-switch.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.switch .contenedor {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  gap: 0px;
+}
+.switch .contenedor .texto {
+  width: 50%;
+  padding: 0px 40px;
+}
+.switch .contenedor .texto h3 {
+  color: #feca07;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: right;
+}
+.switch .contenedor .texto h4 {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: right;
+}
+
+.consola {
+  width: 250px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .xbox .contenedor {
+    flex-direction: row;
+  }
+  .xbox .contenedor .texto {
+    width: 50%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

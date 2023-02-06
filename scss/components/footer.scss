@@ -1,7 +1,7 @@
 footer {
     width: 100%;
     padding: 20px 0px;
-    background-color: $colorPrimario;
+    background-color: #0d4474;
     border-radius: 50px 50px 0px 0px;
     .contenedor {
         @include flex(space-between, "", row, 0px);

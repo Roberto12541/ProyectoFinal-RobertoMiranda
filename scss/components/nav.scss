@@ -30,7 +30,7 @@ header{
                     .item-nav{
                         font-size: 16px;
                         transition: opacity 300ms;
-                        color: gray;
+                        color: white;
                         &-activo{
                             @extend .item-nav;
                             color: $colorPrimario;

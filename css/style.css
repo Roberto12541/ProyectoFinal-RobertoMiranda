@@ -123,7 +123,7 @@ header .contenedor .menu nav ul li {
 header .contenedor .menu nav ul li .item-nav, header .contenedor .menu nav ul li .item-nav-activo {
   font-size: 16px;
   transition: opacity 300ms;
-  color: gray;
+  color: white;
 }
 header .contenedor .menu nav ul li .item-nav-activo {
   color: #1d90f4;
@@ -190,7 +190,7 @@ header .contenedor .menu-extend {
 footer {
   width: 100%;
   padding: 20px 0px;
-  background-color: #1d90f4;
+  background-color: #0d4474;
   border-radius: 50px 50px 0px 0px;
 }
 footer .contenedor {

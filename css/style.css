@@ -1,9 +1,9 @@
 .c-primario {
-  color: #1d90f4;
+  color: #008dff;
 }
 
 .bg-primario {
-  background-color: #1d90f4;
+  background-color: #008dff;
 }
 
 .c-secundario {
@@ -87,16 +87,16 @@ header .contenedor {
   gap: "";
 }
 header .contenedor #logo {
-  color: #1d90f4;
+  color: #008dff;
   font-size: 18px;
-  font-weight: 500m;
+  font-weight: "";
   text-align: left;
 }
 header .contenedor #icon_menu {
   display: block;
   cursor: pointer;
   font-size: 24px;
-  color: #1d90f4;
+  color: #008dff;
 }
 header .contenedor .menu {
   height: 0px;
@@ -126,7 +126,10 @@ header .contenedor .menu nav ul li .item-nav, header .contenedor .menu nav ul li
   color: white;
 }
 header .contenedor .menu nav ul li .item-nav-activo {
-  color: #1d90f4;
+  color: #008dff;
+}
+header .contenedor .menu nav ul li .item-nav:hover, header .contenedor .menu nav ul li .item-nav-activo:hover {
+  color: #008dff;
 }
 header .contenedor .menu-extend {
   height: 230px;

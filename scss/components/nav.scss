@@ -4,7 +4,7 @@ header{
         padding: 20px;
         @include flex(space-between, center, row, "");
         #logo{
-            @include font($colorPrimario, 18px, 500m, left);
+            @include font($colorPrimario, 18px, "", left);
         }
         #icon_menu {
             display: block;
@@ -33,6 +33,9 @@ header{
                         color: white;
                         &-activo{
                             @extend .item-nav;
+                            color: $colorPrimario;
+                        }
+                        &:hover{
                             color: $colorPrimario;
                         }
                     }

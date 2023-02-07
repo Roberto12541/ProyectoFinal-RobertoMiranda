@@ -131,7 +131,7 @@
 .nosotros{
     padding: 40px 20px;
     .contenedor{
-        @include flex(center,"",column, 1px);
+        @include flex(center, "",column, 1px);
         .nosotros__texto{
             h3{
                 font-weight: 400;
